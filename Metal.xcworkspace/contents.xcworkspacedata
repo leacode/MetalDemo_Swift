@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:README.md">
+   </FileRef>
+   <FileRef
+      location = "group:MetalDevices/MetalDevices.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MetalCommand/MetalCommand.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MetalTriangle/MetalTriangle.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MetalBaseBuffers/MetalBaseBuffers.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MetalBasicTexturing/MetalBasicTexturing.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MetalCompute/MetalCompute.xcodeproj">
+   </FileRef>
+</Workspace>

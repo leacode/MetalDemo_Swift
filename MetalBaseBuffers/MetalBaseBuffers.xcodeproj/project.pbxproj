@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6DCDA2D020A6BFFC004E34A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCDA2CF20A6BFFC004E34A9 /* AppDelegate.swift */; };
+		6DCDA2D520A6BFFC004E34A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DCDA2D320A6BFFC004E34A9 /* Main.storyboard */; };
+		6DCDA2D720A6BFFC004E34A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DCDA2D620A6BFFC004E34A9 /* Assets.xcassets */; };
+		6DCDA2DA20A6BFFC004E34A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DCDA2D820A6BFFC004E34A9 /* LaunchScreen.storyboard */; };
+		6DCDA2E320A6C00C004E34A9 /* shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 6DCDA2DF20A6C00C004E34A9 /* shaders.metal */; };
+		6DCDA2E520A6C00C004E34A9 /* MetalRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCDA2E020A6C00C004E34A9 /* MetalRenderer.swift */; };
+		6DCDA2E720A6C00C004E34A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCDA2E120A6C00C004E34A9 /* ViewController.swift */; };
+		6DCDA30320A6C0D1004E34A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCDA30220A6C0D1004E34A9 /* AppDelegate.swift */; };
+		6DCDA30720A6C0D1004E34A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DCDA30620A6C0D1004E34A9 /* Assets.xcassets */; };
+		6DCDA30A20A6C0D1004E34A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DCDA30820A6C0D1004E34A9 /* Main.storyboard */; };
+		6DCDA31020A6C167004E34A9 /* MetalRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCDA2E020A6C00C004E34A9 /* MetalRenderer.swift */; };
+		6DCDA31120A6C167004E34A9 /* shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 6DCDA2DF20A6C00C004E34A9 /* shaders.metal */; };
+		6DCDA31220A6C167004E34A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DCDA2E120A6C00C004E34A9 /* ViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6DCDA2CD20A6BFFB004E34A9 /* MetalBaseBuffers_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetalBaseBuffers_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DCDA2CF20A6BFFC004E34A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6DCDA2D420A6BFFC004E34A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6DCDA2D620A6BFFC004E34A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6DCDA2D920A6BFFC004E34A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6DCDA2DB20A6BFFC004E34A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DCDA2DF20A6C00C004E34A9 /* shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = shaders.metal; sourceTree = "<group>"; };
+		6DCDA2E020A6C00C004E34A9 /* MetalRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalRenderer.swift; sourceTree = "<group>"; };
+		6DCDA2E120A6C00C004E34A9 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6DCDA30020A6C0D1004E34A9 /* MetalBaseBuffers_MAC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetalBaseBuffers_MAC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DCDA30220A6C0D1004E34A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6DCDA30620A6C0D1004E34A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6DCDA30920A6C0D1004E34A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6DCDA30B20A6C0D1004E34A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DCDA30C20A6C0D1004E34A9 /* MetalBaseBuffers_MAC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MetalBaseBuffers_MAC.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6DCDA2CA20A6BFFB004E34A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DCDA2FD20A6C0D1004E34A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6DCDA2AB20A6BFA4004E34A9 = {
+			isa = PBXGroup;
+			children = (
+				6DCDA2E020A6C00C004E34A9 /* MetalRenderer.swift */,
+				6DCDA2DF20A6C00C004E34A9 /* shaders.metal */,
+				6DCDA2E120A6C00C004E34A9 /* ViewController.swift */,
+				6DCDA2CE20A6BFFC004E34A9 /* MetalBaseBuffers_iOS */,
+				6DCDA30120A6C0D1004E34A9 /* MetalBaseBuffers_MAC */,
+				6DCDA2B720A6BFDB004E34A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6DCDA2B720A6BFDB004E34A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DCDA2CD20A6BFFB004E34A9 /* MetalBaseBuffers_iOS.app */,
+				6DCDA30020A6C0D1004E34A9 /* MetalBaseBuffers_MAC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DCDA2CE20A6BFFC004E34A9 /* MetalBaseBuffers_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6DCDA2CF20A6BFFC004E34A9 /* AppDelegate.swift */,
+				6DCDA2D320A6BFFC004E34A9 /* Main.storyboard */,
+				6DCDA2D620A6BFFC004E34A9 /* Assets.xcassets */,
+				6DCDA2D820A6BFFC004E34A9 /* LaunchScreen.storyboard */,
+				6DCDA2DB20A6BFFC004E34A9 /* Info.plist */,
+			);
+			path = MetalBaseBuffers_iOS;
+			sourceTree = "<group>";
+		};
+		6DCDA30120A6C0D1004E34A9 /* MetalBaseBuffers_MAC */ = {
+			isa = PBXGroup;
+			children = (
+				6DCDA30220A6C0D1004E34A9 /* AppDelegate.swift */,
+				6DCDA30620A6C0D1004E34A9 /* Assets.xcassets */,
+				6DCDA30820A6C0D1004E34A9 /* Main.storyboard */,
+				6DCDA30B20A6C0D1004E34A9 /* Info.plist */,
+				6DCDA30C20A6C0D1004E34A9 /* MetalBaseBuffers_MAC.entitlements */,
+			);
+			path = MetalBaseBuffers_MAC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6DCDA2CC20A6BFFB004E34A9 /* MetalBaseBuffers_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DCDA2DC20A6BFFC004E34A9 /* Build configuration list for PBXNativeTarget "MetalBaseBuffers_iOS" */;
+			buildPhases = (
+				6DCDA2C920A6BFFB004E34A9 /* Sources */,
+				6DCDA2CA20A6BFFB004E34A9 /* Frameworks */,
+				6DCDA2CB20A6BFFB004E34A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MetalBaseBuffers_iOS;
+			productName = MetalBaseBuffers_iOS;
+			productReference = 6DCDA2CD20A6BFFB004E34A9 /* MetalBaseBuffers_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6DCDA2FF20A6C0D1004E34A9 /* MetalBaseBuffers_MAC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DCDA30D20A6C0D1004E34A9 /* Build configuration list for PBXNativeTarget "MetalBaseBuffers_MAC" */;
+			buildPhases = (
+				6DCDA2FC20A6C0D1004E34A9 /* Sources */,
+				6DCDA2FD20A6C0D1004E34A9 /* Frameworks */,
+				6DCDA2FE20A6C0D1004E34A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MetalBaseBuffers_MAC;
+			productName = MetalBaseBuffers_MAC;
+			productReference = 6DCDA30020A6C0D1004E34A9 /* MetalBaseBuffers_MAC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DCDA2AC20A6BFA4004E34A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					6DCDA2CC20A6BFFB004E34A9 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					6DCDA2FF20A6C0D1004E34A9 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 6DCDA2AF20A6BFA4004E34A9 /* Build configuration list for PBXProject "MetalBaseBuffers" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6DCDA2AB20A6BFA4004E34A9;
+			productRefGroup = 6DCDA2B720A6BFDB004E34A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DCDA2CC20A6BFFB004E34A9 /* MetalBaseBuffers_iOS */,
+				6DCDA2FF20A6C0D1004E34A9 /* MetalBaseBuffers_MAC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6DCDA2CB20A6BFFB004E34A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DCDA2DA20A6BFFC004E34A9 /* LaunchScreen.storyboard in Resources */,
+				6DCDA2D720A6BFFC004E34A9 /* Assets.xcassets in Resources */,
+				6DCDA2D520A6BFFC004E34A9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DCDA2FE20A6C0D1004E34A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DCDA30720A6C0D1004E34A9 /* Assets.xcassets in Resources */,
+				6DCDA30A20A6C0D1004E34A9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6DCDA2C920A6BFFB004E34A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DCDA2E720A6C00C004E34A9 /* ViewController.swift in Sources */,
+				6DCDA2E520A6C00C004E34A9 /* MetalRenderer.swift in Sources */,
+				6DCDA2D020A6BFFC004E34A9 /* AppDelegate.swift in Sources */,
+				6DCDA2E320A6C00C004E34A9 /* shaders.metal in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DCDA2FC20A6C0D1004E34A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DCDA31020A6C167004E34A9 /* MetalRenderer.swift in Sources */,
+				6DCDA30320A6C0D1004E34A9 /* AppDelegate.swift in Sources */,
+				6DCDA31220A6C167004E34A9 /* ViewController.swift in Sources */,
+				6DCDA31120A6C167004E34A9 /* shaders.metal in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6DCDA2D320A6BFFC004E34A9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DCDA2D420A6BFFC004E34A9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6DCDA2D820A6BFFC004E34A9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DCDA2D920A6BFFC004E34A9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6DCDA30820A6C0D1004E34A9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DCDA30920A6C0D1004E34A9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6DCDA2B020A6BFA4004E34A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		6DCDA2B120A6BFA4004E34A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		6DCDA2DD20A6BFFC004E34A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = Y85J467HQH;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MetalBaseBuffers_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.leacode.MetalBaseBuffers-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6DCDA2DE20A6BFFC004E34A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = Y85J467HQH;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MetalBaseBuffers_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.leacode.MetalBaseBuffers-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6DCDA30E20A6C0D1004E34A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = MetalBaseBuffers_MAC/MetalBaseBuffers_MAC.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MetalBaseBuffers_MAC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.leacode.MetalBaseBuffers-MAC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		6DCDA30F20A6C0D1004E34A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = MetalBaseBuffers_MAC/MetalBaseBuffers_MAC.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MetalBaseBuffers_MAC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.leacode.MetalBaseBuffers-MAC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6DCDA2AF20A6BFA4004E34A9 /* Build configuration list for PBXProject "MetalBaseBuffers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DCDA2B020A6BFA4004E34A9 /* Debug */,
+				6DCDA2B120A6BFA4004E34A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DCDA2DC20A6BFFC004E34A9 /* Build configuration list for PBXNativeTarget "MetalBaseBuffers_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DCDA2DD20A6BFFC004E34A9 /* Debug */,
+				6DCDA2DE20A6BFFC004E34A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DCDA30D20A6C0D1004E34A9 /* Build configuration list for PBXNativeTarget "MetalBaseBuffers_MAC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DCDA30E20A6C0D1004E34A9 /* Debug */,
+				6DCDA30F20A6C0D1004E34A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6DCDA2AC20A6BFA4004E34A9 /* Project object */;
+}

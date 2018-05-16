@@ -18,7 +18,7 @@ If you are a beginner of metal you may look up the demos below:
 5、[Hello Compute](https://developer.apple.com/documentation/metal/compute_processing/hello_compute)
 
 
-Apparently apple write their demos in Objective-c, if you want to write it in swift, it's not that convenient in the first.
+Apparently apple write their demos in Objective-c, if you want to write it in swift, it's not that convenient in the beginning.
 So I rewrite Apple's demo projects in swift. I hope it'll help you.
 
 

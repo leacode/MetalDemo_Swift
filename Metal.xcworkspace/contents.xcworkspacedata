@@ -22,4 +22,7 @@
    <FileRef
       location = "group:MetalCompute/MetalCompute.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Metal_GPU-CPUSynchronization/Metal_GPU-CPUSynchronization.xcodeproj">
+   </FileRef>
 </Workspace>

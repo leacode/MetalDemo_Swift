@@ -4,15 +4,10 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>MetalCompute_MAC.xcscheme</key>
+		<key>Metal_GPU-CPUSynchronization.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>11</integer>
-		</dict>
-		<key>MetalCompute_iOS.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>10</integer>
+			<integer>12</integer>
 		</dict>
 	</dict>
 </dict>

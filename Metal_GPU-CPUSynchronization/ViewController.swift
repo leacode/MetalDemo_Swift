@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  MetalCommand_iOS
+//  MetalTriangle_MAC
 //
 //  Created by leacode on 2018/5/10.
 //
@@ -16,24 +16,29 @@ typealias PlatformViewController = NSViewController
 import MetalKit
 
 class ViewController: PlatformViewController {
-    
+
     var mtkView: MTKView!
     var renderer: MetalRenderer!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        mtkView = self.view as? MTKView
+        mtkView = self.view as! MTKView
         mtkView.device = MTLCreateSystemDefaultDevice()
         
-        if mtkView.device == nil { return }
+        if mtkView.device == nil {
+            NSLog("Metal is not supported on this device");
+            return
+        }
         
         renderer = MetalRenderer(mtkView: mtkView)
         
-        mtkView.delegate = renderer
+        // Initialize our renderer with the view size
+        renderer.mtkView(mtkView, drawableSizeWillChange: mtkView.drawableSize)
         
-        mtkView.preferredFramesPerSecond = 60
+        mtkView.delegate = renderer        
     }
+
 
 }
 

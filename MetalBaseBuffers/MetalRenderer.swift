@@ -40,14 +40,14 @@ open class MetalRenderer: NSObject, MTKViewDelegate {
                                       Vertex(position: [ 20, -20], color: [1, 0, 0, 1]),
                                       Vertex(position: [-20, -20], color: [0, 1, 0, 1]),
                                       Vertex(position: [ 20,  20], color: [0, 0, 1, 1])
-                                     ]
-
+        ]
+        
         let NUM_COLUMNS = 25
         let NUM_ROWS = 15
         let NUM_VERTICES_RED_QUAD = quadVertices.count
         let QUAD_SPACING: Float = 50.0
         
-//        MemoryLayout.size(ofValue: quadVertices)
+        //        MemoryLayout.size(ofValue: quadVertices)
         
         let dataSize = MemoryLayout<Vertex>.size * quadVertices.count * NUM_COLUMNS * NUM_ROWS
         let vertexData: NSMutableData = NSMutableData(length: dataSize)!
@@ -57,7 +57,7 @@ open class MetalRenderer: NSObject, MTKViewDelegate {
         for row in 0..<NUM_ROWS {
             for column in 0..<NUM_COLUMNS {
                 var upperLeftPosition = vector_float2()
-
+                
                 upperLeftPosition.x = (-Float(NUM_COLUMNS)/2.0 + Float(column)) * QUAD_SPACING + QUAD_SPACING/2.0
                 upperLeftPosition.y = (-Float(NUM_ROWS)/2.0 + Float(row)) * QUAD_SPACING + QUAD_SPACING/2.0
                 
@@ -71,7 +71,7 @@ open class MetalRenderer: NSObject, MTKViewDelegate {
         
         return vertexData
     }
-
+    
     public convenience init(mtkView: MTKView) {
         self.init()
         device = mtkView.device
@@ -102,7 +102,7 @@ open class MetalRenderer: NSObject, MTKViewDelegate {
         }
         
         let vertexData = MetalRenderer.generateVertexData()
-
+        
         vertexBuffer = device?.makeBuffer(length: vertexData.length, options: MTLResourceOptions.storageModeShared)
         
         memcpy(vertexBuffer.contents(), vertexData.bytes, vertexData.length);
@@ -149,7 +149,7 @@ open class MetalRenderer: NSObject, MTKViewDelegate {
             //
             renderEncoder?.setVertexBuffer(vertexBuffer,
                                            offset: 0,
-                                           index: VertextInputIndex.VertextInputIndexVertices.hashValue)
+                                           index: VertextInputIndex.VertextInputIndexVertices.rawValue)
             
             // You send a pointer to `_viewportSize` and also indicate its size
             // The `AAPLVertexInputIndexViewportSize` enum value corresponds to the
@@ -158,7 +158,7 @@ open class MetalRenderer: NSObject, MTKViewDelegate {
             //  for its index
             renderEncoder?.setVertexBytes(&MetalRenderer.viewportSize,
                                           length: MemoryLayout<vector_uint2>.size,
-                                          index: VertextInputIndex.VertextInputIndexViewportSize.hashValue)
+                                          index: VertextInputIndex.VertextInputIndexViewportSize.rawValue)
             
             // Draw the 3 vertices of our triangle
             renderEncoder?.drawPrimitives(type: MTLPrimitiveType.triangle,

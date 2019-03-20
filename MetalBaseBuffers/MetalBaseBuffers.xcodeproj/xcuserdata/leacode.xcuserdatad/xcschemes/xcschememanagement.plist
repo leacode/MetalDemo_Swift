@@ -4,19 +4,29 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>MetalBaseBuffers_MAC.xcscheme</key>
+		<key>MetalBaseBuffers_MAC.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>4</integer>
 		</dict>
 		<key>MetalBaseBuffers_iOS.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>8</integer>
 		</dict>
+		<key>MetalBaseBuffers_iOS.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>6DCDA2CC20A6BFFB004E34A9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>6DCDA2FF20A6C0D1004E34A9</key>
 		<dict>
 			<key>primary</key>

@@ -30,7 +30,7 @@ open class MetalRenderer: NSObject, MTKViewDelegate {
     private var device: MTLDevice?
     
     // Our compute pipeline composed of our kernel defined in the .metal shader file
-    private var pipelineState: MTLComputePipelineState?
+    private var pipelineState: MTLRenderPipelineState?
     
     // The command Queue from which we'll obtain command buffers
     private var commandQueue: MTLCommandQueue?

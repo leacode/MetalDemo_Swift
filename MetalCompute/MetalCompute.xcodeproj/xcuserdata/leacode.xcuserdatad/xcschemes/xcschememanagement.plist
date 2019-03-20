@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>11</integer>
 		</dict>
+		<key>MetalCompute_MAC.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
 		<key>MetalCompute_iOS.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>10</integer>
+		</dict>
+		<key>MetalCompute_iOS.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>11</integer>
 		</dict>
 	</dict>
 </dict>

@@ -50,7 +50,7 @@ open class MetalRenderer: NSObject, MTKViewDelegate {
         do {
             pipelineState = try device?.makeRenderPipelineState(descriptor: pipelineStateDesctiptor)
         } catch {
-        
+            
         }
         // Create the command queue
         commandQueue = device?.makeCommandQueue()
@@ -58,7 +58,7 @@ open class MetalRenderer: NSObject, MTKViewDelegate {
     
     // MARK: - MTKViewDelegate
     public func draw(in view: MTKView) {
-                
+        
         let vertexData = [Vertex(position: [ 250, -250], color: [1, 0, 0, 1]),
                           Vertex(position: [ -250, -250], color: [0, 1, 0, 1]),
                           Vertex(position: [ 0, 250], color: [0, 0, 1, 1])]
@@ -95,7 +95,7 @@ open class MetalRenderer: NSObject, MTKViewDelegate {
             // the `AAPLVertexInputIndexVertices` enum value for its index
             renderEncoder?.setVertexBytes(vertexData,
                                           length: MemoryLayout<Vertex>.size * 3,
-                                          index: VertextInputIndex.VertextInputIndexVertices.hashValue)
+                                          index: VertextInputIndex.VertextInputIndexVertices.rawValue)
             
             // You send a pointer to `_viewportSize` and also indicate its size
             // The `AAPLVertexInputIndexViewportSize` enum value corresponds to the
@@ -104,7 +104,7 @@ open class MetalRenderer: NSObject, MTKViewDelegate {
             //  for its index
             renderEncoder?.setVertexBytes(&MetalRenderer.viewportSize,
                                           length: MemoryLayout<vector_uint2>.size * 3,
-                                          index: VertextInputIndex.VertextInputIndexViewportSize.hashValue)
+                                          index: VertextInputIndex.VertextInputIndexViewportSize.rawValue)
             
             // Draw the 3 vertices of our triangle
             renderEncoder?.drawPrimitives(type: MTLPrimitiveType.triangle, vertexStart: 0, vertexCount: 3)

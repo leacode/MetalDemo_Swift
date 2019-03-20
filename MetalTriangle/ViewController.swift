@@ -23,7 +23,7 @@ class ViewController: PlatformViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        mtkView = self.view as! MTKView
+        mtkView = self.view as? MTKView
         mtkView.device = MTLCreateSystemDefaultDevice()
         
         if mtkView.device == nil { return }

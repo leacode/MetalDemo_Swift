@@ -149,7 +149,7 @@ open class MetalRenderer: NSObject, MTKViewDelegate {
             //
             renderEncoder?.setVertexBuffer(vertexBuffer,
                                            offset: 0,
-                                           index: VertextInputIndex.VertextInputIndexVertices.hashValue)
+                                           index: VertextInputIndex.VertextInputIndexVertices.rawValue)
             
             // You send a pointer to `_viewportSize` and also indicate its size
             // The `AAPLVertexInputIndexViewportSize` enum value corresponds to the
@@ -158,7 +158,7 @@ open class MetalRenderer: NSObject, MTKViewDelegate {
             //  for its index
             renderEncoder?.setVertexBytes(&MetalRenderer.viewportSize,
                                           length: MemoryLayout<vector_uint2>.size,
-                                          index: VertextInputIndex.VertextInputIndexViewportSize.hashValue)
+                                          index: VertextInputIndex.VertextInputIndexViewportSize.rawValue)
             
             // Draw the 3 vertices of our triangle
             renderEncoder?.drawPrimitives(type: MTLPrimitiveType.triangle,

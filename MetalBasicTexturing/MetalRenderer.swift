@@ -182,7 +182,7 @@ open class MetalRenderer: NSObject, MTKViewDelegate {
                                                    originY: 0.0,
                                                    width: Double(MetalRenderer.viewportSize.x),
                                                    height: Double(MetalRenderer.viewportSize.y),
-                                                   znear: -1.0, zfar: 1.0))
+                                                   znear: 0.0, zfar: 1.0))
             renderEncoder?.setRenderPipelineState(pipelineState!)
             
             renderEncoder?.setVertexBuffer(vertexBuffer,
